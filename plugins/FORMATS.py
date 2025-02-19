@@ -45,11 +45,10 @@ HELP_TEXT = """<b>⁉️ Hᴇʟʟᴏ {mention} ~
 <b><i>◈ Sᴛɪʟʟ ʜᴀᴠᴇ ᴅᴏᴜʙᴛs, ᴄᴏɴᴛᴀᴄᴛ ʙᴇʟᴏᴡ ᴘᴇʀsᴏɴs/ɢʀᴏᴜᴘ ᴀs ᴘᴇʀ ʏᴏᴜʀ ɴᴇᴇᴅ !</i></b>"""
 
 ABOUT_TXT = """<b>🤖 ᴍʏ ɴᴀᴍᴇ: {botname}
-<blockquote expandable>◈ ᴀᴅᴠᴀɴᴄᴇ ғᴇᴀᴛᴜʀᴇs: <a href='https://telegra.ph/BOT-FEATURES-11-09-28'>Cʟɪᴄᴋ ʜᴇʀᴇ</a>
-◈ ᴏᴡɴᴇʀ: <a href='tg://openmessage?user_id=6830432475'>ᴀᴅʀ</a>
-◈ ʟᴀɴɢᴜᴀɢᴇ: <a href='https://docs.python.org/3/'>Pʏᴛʜᴏɴ 3</a>
-◈ ʟɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ ᴠ2</a>
-◈ ᴅᴀᴛᴀʙᴀsᴇ: <a href='https://www.mongodb.com/docs/'>Mᴏɴɢᴏ ᴅʙ</a>
+<blockquote expandable>◈ ᴏᴡɴᴇʀ: <a href='tg://openmessage?user_id=6830432475'>ᴀᴅʀ</a>
+◈ ʟᴀɴɢᴜᴀɢᴇ: Pʏᴛʜᴏɴ 3
+◈ ʟɪʙʀᴀʀʏ: Pʏʀᴏɢʀᴀᴍ ᴠ2
+◈ ᴅᴀᴛᴀʙᴀsᴇ: Mᴏɴɢᴏ ᴅʙ
 🧑‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/imakashrabha'>ᴀᴋᴀsʜ</a></b></blockquote>"""
 
 SETTING_TXT = """<b>⚙️ Cᴏɴғɪɢᴜʀᴀᴛɪᴏɴs</b>
