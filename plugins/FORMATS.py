@@ -45,7 +45,7 @@ HELP_TEXT = """<b>⁉️ Hᴇʟʟᴏ {mention} ~
 <b><i>◈ Sᴛɪʟʟ ʜᴀᴠᴇ ᴅᴏᴜʙᴛs, ᴄᴏɴᴛᴀᴄᴛ ʙᴇʟᴏᴡ ᴘᴇʀsᴏɴs/ɢʀᴏᴜᴘ ᴀs ᴘᴇʀ ʏᴏᴜʀ ɴᴇᴇᴅ !</i></b>"""
 
 ABOUT_TXT = """<b>🤖 ᴍʏ ɴᴀᴍᴇ: {botname}
-<blockquote expandable>›› ᴏᴡɴᴇʀ: <a href='tg://openmessage?user_id=6830432475'>ᴀᴅʀ</a
+<blockquote expandable>›› ᴏᴡɴᴇʀ: <a href='tg://openmessage?user_id=6830432475'>ᴀᴅʀ</a>
 ›› ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/imakashrabha'>ᴀᴋᴀsʜ</a></b></blockquote>"""
 
 SETTING_TXT = """<b>⚙️ Cᴏɴғɪɢᴜʀᴀᴛɪᴏɴs</b>
