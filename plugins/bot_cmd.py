@@ -1,5 +1,3 @@
-# +++ Made By King [telegram username: @Shidoteshika1] +++
-
 import os
 import asyncio
 from asyncio import Lock
@@ -210,7 +208,7 @@ async def bcmd(bot: Bot, message: Message):
 
 #--------------------------------------------------------------[[NORMAL USER ACCESSIBLE COMMANDS]]----------------------------------------------------------------------#
 
-@Bot.on_message(filters.command('forcesub') & filters.private & ~banUser)
+@Bot.on_message(filters.command('forcesub') & filters.private & is_admin)
 async def fsub_commands(client: Client, message: Message):
     button = [[InlineKeyboardButton("Cʟᴏsᴇ ✖️", callback_data="close")]]
     await message.reply(text=FSUB_CMD_TXT, reply_markup=InlineKeyboardMarkup(button), quote=True)
