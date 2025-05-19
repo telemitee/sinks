@@ -1,5 +1,3 @@
-# +++ Made By King [telegram username: @Shidoteshika1] +++
-
 from bot import Bot
 import asyncio
 from pyrogram.enums import ParseMode, ChatAction
@@ -361,7 +359,7 @@ async def get_banuser_list(client:Client, message: Message):
 #=====================================================================================##
 
 # Auto Delete Setting Commands
-@Bot.on_message(filters.command('auto_del') & filters.private & ~banUser)
+@Bot.on_message(filters.command('auto_del') & filters.private & is_admin)
 async def autoDelete_settings(client, message):
     await message.reply_chat_action(ChatAction.TYPING)
 
@@ -389,7 +387,7 @@ async def autoDelete_settings(client, message):
             
 
 #Files related settings command
-@Bot.on_message(filters.command('files') & filters.private & ~banUser)
+@Bot.on_message(filters.command('files') & filters.private & is_admin)
 async def files_commands(client: Client, message: Message):
     await message.reply_chat_action(ChatAction.TYPING)
         
@@ -429,7 +427,7 @@ async def files_commands(client: Client, message: Message):
 
 
 #Request force sub mode commad,,,,,,
-@Bot.on_message(filters.command('req_fsub') & filters.private & ~banUser)
+@Bot.on_message(filters.command('req_fsub') & filters.private & is_admin)
 async def handle_reqFsub(client: Client, message: Message):
     await message.reply_chat_action(ChatAction.TYPING)
     try:
