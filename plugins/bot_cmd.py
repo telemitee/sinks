@@ -32,7 +32,7 @@ async def cancel_broadcast(client: Bot, message: Message):
     async with cancel_lock:
         is_canceled = True
 
-@Bot.on_message(filters.private & filters.command('dbroadcast') & admin)
+@Bot.on_message(filters.private & filters.command('dbroadcast') & is_admin)
 async def delete_broadcast(client: Bot, message: Message):
     if message.reply_to_message:
         try:
