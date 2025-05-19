@@ -32,6 +32,62 @@ async def cancel_broadcast(client: Bot, message: Message):
     async with cancel_lock:
         is_canceled = True
 
+@Bot.on_message(filters.private & filters.command('dbroadcast') & admin)
+async def delete_broadcast(client: Bot, message: Message):
+    if message.reply_to_message:
+        try:
+            duration = int(message.command[1])  # Get the duration in seconds
+        except (IndexError, ValueError):
+            await message.reply("<b>Pʟᴇᴀsᴇ ᴜsᴇ ᴀ ᴠᴀʟɪᴅ ᴅᴜʀᴀᴛɪᴏɴ ɪɴ sᴇᴄᴏɴᴅs.</b> Usᴀɢᴇ: /dbroadcast {duration}")
+            return
+
+        query = await db.full_userbase()
+        broadcast_msg = message.reply_to_message
+        total = 0
+        successful = 0
+        blocked = 0
+        deleted = 0
+        unsuccessful = 0
+
+        pls_wait = await message.reply("<i>Broadcast with auto-delete processing....</i>")
+        for chat_id in query:
+            try:
+                sent_msg = await broadcast_msg.copy(chat_id)
+                await asyncio.sleep(duration)  # Wait for the specified duration
+                await sent_msg.delete()  # Delete the message after the duration
+                successful += 1
+            except FloodWait as e:
+                await asyncio.sleep(e.x)
+                sent_msg = await broadcast_msg.copy(chat_id)
+                await asyncio.sleep(duration)
+                await sent_msg.delete()
+                successful += 1
+            except UserIsBlocked:
+                await db.del_user(chat_id)
+                blocked += 1
+            except InputUserDeactivated:
+                await db.del_user(chat_id)
+                deleted += 1
+            except:
+                unsuccessful += 1
+                pass
+            total += 1
+
+        status = f"""<b><u>Bʀᴏᴀᴅᴄᴀsᴛɪɴɢ ᴡɪᴛʜ Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ...</u>
+
+Total Users: <code>{total}</code>
+Successful: <code>{successful}</code>
+Blocked Users: <code>{blocked}</code>
+Deleted Accounts: <code>{deleted}</code>
+Unsuccessful: <code>{unsuccessful}</code></b>"""
+
+        return await pls_wait.edit(status)
+
+    else:
+        msg = await message.reply("Pʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ ɪᴛ ᴡɪᴛʜ Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ.")
+        await asyncio.sleep(8)
+        await msg.delete()
+        
 @Bot.on_message(filters.command('broadcast') & filters.private & is_admin)
 async def send_text(client: Bot, message: Message):
     global is_canceled
