@@ -1,6 +1,5 @@
-# +++ Made By King [telegram username: @Shidoteshika1] +++
 
-#text formatting....
+#Text formatting....
 
 on_pic = "https://telegra.ph/file/5593d624d11d92bceb48e.jpg"
 off_pic = "https://telegra.ph/file/0d9e590f62b63b51d4bf9.jpg"
