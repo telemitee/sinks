@@ -1,5 +1,3 @@
-# +++ Made By King [telegram username: @Shidoteshika1] +++
-
 from aiohttp import web
 from plugins import web_server
 
