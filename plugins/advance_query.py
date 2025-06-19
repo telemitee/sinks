@@ -80,14 +80,14 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         user_link = f"https://t.me/{user.username}" if user.username else f"tg://openmessage?user_id={OWNER_ID}" 
         ownername = f"<a href={user_link}>{user.first_name}</a>" if user.first_name else f"<a href={user_link}>no name !</a>"
         await query.edit_message_media(
-            InputMediaPhoto("https://telegra.ph/file/6219c9d5edbeecfd3a45e.jpg", 
+            InputMediaPhoto("https://envs.sh/JP6.jpg", 
                             ABOUT_TXT.format(
                                 botname = client.name,
                                 ownername = ownername, 
                             )
             ),
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton('⬅️ Bᴀᴄᴋ', callback_data='start'), InlineKeyboardButton('Cʟᴏsᴇ ✖️', callback_data='close')]
+                [InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'), InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')]
             ]),
         )
         
@@ -117,7 +117,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                                 )
                 ),
                 reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton('⬅️ Bᴀᴄᴋ', callback_data='start'), InlineKeyboardButton('Cʟᴏsᴇ ✖️', callback_data='close')]
+                [InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'), InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')]
                 ]),
             )
         except Exception as e:
@@ -135,7 +135,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                             )
             ),
             reply_markup = InlineKeyboardMarkup([
-                [InlineKeyboardButton('🤖 Aʙᴏᴜᴛ ᴍᴇ', callback_data='about'), InlineKeyboardButton('Sᴇᴛᴛɪɴɢs ⚙️', callback_data='setting')]
+                [InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'), InlineKeyboardButton('sᴇᴛᴛɪɴɢs', callback_data='setting')]
             ]),
         )
         
