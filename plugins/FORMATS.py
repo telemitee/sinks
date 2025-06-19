@@ -41,7 +41,7 @@ HELP_TEXT = """<b>⁉️ Hᴇʟʟᴏ {mention} ~
 <b><i>◈ Sᴛɪʟʟ ʜᴀᴠᴇ ᴅᴏᴜʙᴛs, ᴄᴏɴᴛᴀᴄᴛ ʙᴇʟᴏᴡ ᴘᴇʀsᴏɴs/ɢʀᴏᴜᴘ ᴀs ᴘᴇʀ ʏᴏᴜʀ ɴᴇᴇᴅ !</i></b>"""
 
 ABOUT_TXT = """<b>🤖 ᴍʏ ɴᴀᴍᴇ: {botname}
-<blockquote expandable>›› ᴏᴡɴᴇʀ: <a href='tg://openmessage?user_id=6165669080'></a>
+<blockquote expandable>›› ᴏᴡɴᴇʀ: <a href='tg://openmessage?user_id=6165669080'>ᴜɴᴋɴᴏᴡɴ</a>
 ›› sᴜᴘᴘᴏʀᴛ: <a href='https://t.me/always tohelpbot'>ᴀᴋᴀsʜ</a></b></blockquote>"""
 
 SETTING_TXT = """<b>⚙️ Cᴏɴғɪɢᴜʀᴀᴛɪᴏɴs</b>
