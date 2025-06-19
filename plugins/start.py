@@ -101,7 +101,7 @@ async def start_command(client: Client, message: Message):
                 asyncio.create_task(auto_del_notification(client.username, last_message, DEL_TIMER, message.command[1]))
                         
     else:   
-        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('🤖 Aʙᴏᴜᴛ ᴍᴇ', callback_data= 'about'), InlineKeyboardButton('Sᴇᴛᴛɪɴɢs ⚙️', callback_data='setting')]])
+        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data= 'about'), InlineKeyboardButton('sᴇᴛᴛɪɴɢs', callback_data='setting')]])
 
         await message.reply_photo(
             photo = random.choice(PICS),
