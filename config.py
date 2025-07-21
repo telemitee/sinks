@@ -26,7 +26,7 @@ SUPPORT_GROUP = os.environ.get("SUPPORT_GROUP", "https://t.me/")
 PORT = os.environ.get("PORT", "8080")
 
 #Database --⚠️ REQUIRED--
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://akashrabha2005:781120@cluster0.pv6yd2f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://akashz9t:akash123@cluster0.zu0io.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DB_NAME = os.environ.get("DATABASE_NAME", "heavy")
 
